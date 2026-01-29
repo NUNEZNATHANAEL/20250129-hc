@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #222;
+   background: linear-gradient(120deg, #ffffff 0%, #000 130%);
+}
+
+header {
+  background: #f2f2f2;
+  padding: 0 0 60px;
+  text-align: center;
+  width: 100%;
+}
+
+.logo{
+  background-color: #fff;
+  padding: 20px 0;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.copy{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copy h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.copy p {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.75;
+  margin-bottom: 5px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 150px auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-label {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+
+.btn-detail {
+  border: 2px solid #1571da;
+  background-color: #fff;
+  color: #1571da;
+  display: block;
+  width: 180px;
+  height: 50px;
+  margin: 40px auto 0;
+  padding: 0 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-detail:hover {
+  background-color: #f0f7ff;
+}
+
+.reason-cards {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.card-reason1 {
+  background: url(https://cdn-ak.f.st-hatena.com/images/fotolife/d/desutoroihonda/20230127/20230127162436.jpg) center top / cover no-repeat;
+  width: 380px;
+  min-height: 280px;
+  padding: 20px 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.card-reason2 {
+  background: url(https://img.gamewith.jp/img/d85ff4ef866b48d4091d614749f57242.jpg) center top / cover no-repeat;
+  width: 380px;
+  min-height: 280px;
+  padding: 20px 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.card-reason3 {
+  background: url(https://i.pinimg.com/474x/84/fc/60/84fc607d6f88f473c2c4ba8de59047fc.jpg) center top / cover no-repeat;
+  width: 380px;
+  min-height: 280px;
+  padding: 20px 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.card-reason1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  z-index: -1;
+  background-color: rgba(255,255,255,0.8);
+}
+.card-reason2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  z-index: -1;
+  background-color: rgba(255,255,255,0.8);
+}
+.card-reason3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  z-index: -1;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.card-reason-number {
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+}
+
+.card-reason-label {
+  font-size: 12px;
+  color: #999;
+}
+
+.card-reason-text {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.func-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+  margin-bottom: 40px;
+}
+
+.card-func {
+  background: #f2f2f2;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.card-func.large {
+  width: 565px;
+  padding: 30px 40px;
+}
+
+.card-func.small {
+  width: 366px;
+  padding: 40px;
+}
+
+.card-func-icon {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;  
+  border-radius: 50% ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #999;
+}
+
+.card-func.small .card-func-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.card-func-text {
+  flex: 1;
+}
+
+.card-func-text h3 {
+  font-size: 20px;
+  color: #1571da;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.card-func-text p {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.75;
+}
+
+.logo-corp-cards {
+  border: 2px solid #f2f2f2;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 20px;
+  margin-bottom: 40px;
+}
+
+.card-logo {
+  width: 156px;
+  height: 60px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #999;
+}
+
+.recruit-cards {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.card-recruit {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.card-recruit-img {
+  height: 200px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #999;
+}
+
+.card-recruit-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-recruit-title {
+  font-size: 20px;
+  color: #1571da;
+  font-weight: bold;
+  line-height: 1.4;
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.card-recruit-company {
+  font-size: 16px;
+  color: #222;
+  font-weight: bold;
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.card-recruit-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.card-recruit-info dt {
+  width: 6em;
+  font-weight: normal;
+  color: #0a0a0a;
+}
+
+.card-recruit-info dd {
+  width: calc(100% - 6em);
+  font-weight: bold;
+  color: #f3f3f3;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+}
